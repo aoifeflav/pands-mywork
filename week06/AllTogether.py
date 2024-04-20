@@ -18,7 +18,7 @@ def do_add(students):
 
 def read_modules():
     modules = []
-    module_name = input(f"\tEnter the first module name (blank to quit):")
+    module_name = input("\tEnter the first module name (blank to quit):")
 
     while module_name != "":
         module = {}
@@ -45,10 +45,9 @@ students = []
 choice = display_menu()
 while (choice != "q"):
     if choice == "a":
-        do_add()
+        do_add(students)
     elif choice == "v":
-        do_view()
+        do_view(students)
     elif choice != "q":
         print("\nplease select either a, v or q")
     choice = display_menu()
-    
